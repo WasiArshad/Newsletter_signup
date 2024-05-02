@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card-container {
+    background-color: hsl(235, 18%, 26%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    box-shadow: 1px 0 50px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 30px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    margin-block: 60px;
+    padding-inline: 50px;
+}
+.left h1 {
+    font-size: 42px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    letter-spacing: 2px;
+}
+.left p {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: hsla(235, 18%, 26%, 0.848);
+    margin-block: 20px;
+    max-width: 311px;
+}
+.content-img {
+    display: flex;
+    flex-direction: column;
+}
+.content-img span {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: hsl(235, 18%, 26%);
+}
+.imgText {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.imgText span {
+    margin-left: 8px;
+}
+.email-header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-tag {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    color: hsla(234, 29%, 20%, 0.804);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.input-style {
+    margin-block: 5px 20px;
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+.input-style {
+    cursor: pointer;
+}
+.btn {
+    padding: 15px;
+    border-radius: 8px;
+    border: 0;
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+.btn {
+    cursor: pointer;
+}
+.btn:hover {
+    background-image: linear-gradient(to right, hsla(4, 92%, 62%, 0.741), hsl(4, 100%, 67%));
+}
+.right {
+    padding: 15px 15px 15px 0px;
+}
+.right img {
+    height: 450px;
+}
+.notValid {
+    color: rgba(255, 0, 0, 0.664);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.error {
+    display: none;
+}
+.valid {
+    border-bottom: 1px solid green;
+}
+.success-msg {
+    background-color: #fff;
+    box-shadow: 1px 0 50px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    width: 380px;
+    border-radius: 20px;
+}
+.hide {
+    display: none;
+}
+.success-msg img {
+    width: 50px;
+}
+.success-msg h1 {
+    margin-block: 20px;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: hsl(234, 29%, 20%);
+}
+.success-msg p {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: hsla(235, 18%, 26%, 0.848);
+}
+.mail {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+.success-btn {
+    margin-block: 30px 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+@media (max-width: 700px) {
+    .card {
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+    .desktop-only {
+        display: none !important;
+    }
+    .right {
+        padding: 0;
+    }
+    .right img {
+        height: unset;
+    }
+    .mobile-only {
+        border-radius: 0px 0px 10px 10px;
+    }
+    .left {
+        margin-block: unset;
+        padding-inline: 25px;
+    }
+    .left h1 {
+        font-size: 40px;
+        margin-block: 30px 0px;
+    }
+    .left p {
+        max-width: 295px;
+        font-size: 16px;
+    }
+    .imgText span {
+        max-width: 226px;
+        margin-left: 14px;
+    }
+    .imgText {
+        margin: 8px;
+    }
+    .btn {
+        margin-bottom: 25px;
+    }
+    .success-msg {
+        border-radius: 0;
+    }
+    .success-msg img {
+        padding: 50px 0px 50px 0px;
+    }
+    .success-msg p {
+        padding-bottom: 175px;
+        font-size: 16px;
+    }
+    .success-btn {
+        margin-bottom: unset;
+    }
+}
+@media (min-width: 701px) {
+    .mobile-only {
+        display: none !important;
+    }
+}
